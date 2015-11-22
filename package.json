@@ -32,5 +32,8 @@
   "scripts": {
     "test": "gulp"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "app-module-path": "^1.0.4"
+  }
 }

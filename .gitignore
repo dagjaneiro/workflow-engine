@@ -1,5 +1,6 @@
 node_modules
 coverage
+typings
 
 ### SublimeText ###
 # cache files for sublime text
