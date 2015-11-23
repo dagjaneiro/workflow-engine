@@ -6,5 +6,11 @@ module.exports = {
       human: 'HumanService',
       system: 'SystemService'
     }
+  },
+  flow: {
+    type: {
+      link: 'LinkFlow',
+      gateway: 'GatewayFlow'
+    }
   }
 };
