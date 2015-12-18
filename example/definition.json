@@ -1,0 +1,42 @@
+{
+  "properties": {
+    "name": "Example Workflow"
+  },
+  "services": {
+    "Init": {
+      "component": "WF_Init",
+      "metadata": {}
+    },
+    "Get Address": {
+      "component": "WF_GetAddress"
+    },
+    "Get Name": {
+      "component": "WF_GetName"
+    },
+    "Logout": {
+      "component": "WF_Logout"
+    }
+  },
+  "connections": [
+    {
+      "src": {
+        "service": "Init"
+      },
+      "tgt": {
+        "service": [
+          "Get Address",
+          "Get Name"
+        ],
+        "decision": "WF_InitDecision"
+      }
+    },
+    {
+      "src": {
+        "service": "Get Name"
+      },
+      "tgt": {
+        "service": "Logout"
+      }
+    }
+  ]
+}
